@@ -1,0 +1,27 @@
+$black: #252626;
+$grey-transporent: #3e3f40ab;
+$grey: #898b8c;
+$grey-lucid: #f1f1f1;
+$white: #fff;
+
+$beige: #eae9d6;
+$beige-darken: #ccc8a2;
+
+$red: #f05555;
+$yellow: #f8f63f;
+$green: #48b0a2;
+$blue: #3e99ed;
+$blue-dark: #1f86ed;
+$blue-light: #41b0ed;
+
+//Transition
+$transition: all 0.5s ease;
+
+//Fonts
+$source: Source Sans Pro, sans-serif;
+
+
+//Media Queries
+$mobile-min: screen and (max-width: 374px);
+$mobile: screen and (max-width: 766px);
+$tablet: (min-width: 767px) and (max-width: 1290px);

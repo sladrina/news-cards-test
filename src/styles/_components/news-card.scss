@@ -1,0 +1,168 @@
+.news-card {
+  @include size(364px,376px);
+  margin-right: 24px;
+  cursor: pointer;
+
+  &.second,
+  &.forth {
+    margin-right: 0;
+  }
+
+  &__author {
+    @include size(100%);
+    max-height: 40px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    @include flex(row);
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+    &-info {
+      @include flex(row);
+      align-items: center;
+    }
+
+    &-logo {
+      @include size(26px,26px);
+      margin-right: 8px;
+      margin-left: 8px;
+      background: $white center center no-repeat;
+      background-size: cover;
+      border: 1px solid #898B8C;
+      border-radius: 50px;
+
+      &.bigOne {
+        background-image: url("../../images/logo1.jpg");
+      }
+
+      &.first {
+        background-image: url("../../images/logo2.jpg");
+      }
+
+      &.second,
+      &.forth {
+        background-image: url("../../images/logo4.jpg");
+      }
+
+      &.third {
+        background-image: url("../../images/logo3.jpg");
+        background-size: 67%;
+      }
+    }
+
+    &-name {
+      max-width: 175px;
+      overflow: hidden;
+    }
+  }
+
+  &__chosen {
+    @include size(122px);
+    @include flex(row);
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0;
+    margin-right: 16px;
+    background: $blue;
+    border-radius: 6px 6px 0 6px;
+    color: $white;
+    @include font(11px,600,1.2);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__image {
+    @include size(100%,224px);
+    background: $beige-darken no-repeat center center;
+    border-radius: 14px 0 14px 14px;
+    position: relative;
+    background-size: cover;
+
+    &-wrap {
+      @include size(33px,70px);
+      padding: 5px 20px;
+      @include flex(column);
+      align-items: center;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      background: $grey-transporent;
+      border-radius: 8px 0 8px 8px;
+      color: $white;
+
+      ._date {
+        @include flex(column,wrap);
+        align-items: center;
+
+        &-day {
+          font-size: 29px;
+          height: 32px;
+        }
+
+        &-month {
+          height: 18px;
+        }
+      }
+    }
+
+    &.bigOne {
+      @include size(100%,600px);
+      background-color: $beige;
+      background-image: url("../../images/img1.jpg");
+    }
+
+    &.first {
+      background-image: url("../../images/img2.jpg");
+    }
+
+    &.second {
+      background-color: $beige;
+      background-image: url("../../images/img3.jpg");
+      background-size: 35%;
+    }
+
+    &.forth {
+      background-image: url("../../images/img5.jpg");
+    }
+
+    &-title {
+      @include size(235px,181px);
+      @include font(29px,600,1.13);
+      color: $white;
+      position: absolute;
+      left: 24px;
+      top: 32px;
+      right: 105px;
+    }
+  }
+
+  &__info {
+    @include flex(row);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8px;
+    margin-top: 1px;
+
+    &-city {
+      color: $blue;
+    }
+  }
+
+  &__online {
+    color: $green;
+  }
+
+  &__category {
+    color: $grey;
+    font-size: 13.8px;
+    font-weight: 400;
+  }
+
+  &__title {
+    padding: 0 8px;
+    @include font(17px,600,1.3);
+    letter-spacing: 0.45px;
+    color: $black;
+  }
+}

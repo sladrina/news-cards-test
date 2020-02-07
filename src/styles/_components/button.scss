@@ -1,0 +1,41 @@
+.button {
+  @include size(364px,40px);
+  background: $blue;
+  @include flex();
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  border-style: none;
+  border-radius: 24px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  color: $white;
+  @include font(17px,600);
+  transition: $transition;
+
+  &:hover {
+    background: $blue-light;
+    color: darken($white,5px);
+  }
+
+  &:active {
+    background: $blue-dark;
+  }
+}
+
+@media #{$tablet} {
+  .button {
+    font-size: 19px;
+  }
+}
+
+@media #{$mobile} {
+  .button {
+    @include size(288px,40px);
+    @include font(16px,600);
+    margin-top: -93px;
+    padding: 0;
+    margin-left: -21px;
+  }
+}
